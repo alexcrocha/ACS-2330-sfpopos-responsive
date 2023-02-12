@@ -7,3 +7,8 @@
   width: 100%;
   height: auto;
 }
+.hours {
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: italic;
+}

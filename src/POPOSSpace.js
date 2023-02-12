@@ -1,7 +1,7 @@
-import logo from './logo.svg'
-import './POPOSSpace.css'
+import React from 'react';
+import './POPOSSpace.css';
 
-function POPOSSpace({ name, image, address }) {
+function POPOSSpace({ name, image, address, hours }) {
   return (
     <div className='POPOSSpace'>
       <img src={`${process.env.PUBLIC_URL}/images/${image}`}
@@ -11,8 +11,9 @@ function POPOSSpace({ name, image, address }) {
       />
       <h1>{name}</h1>
       <div>{address}</div>
+      <div className='hours'>{hours}</div>
     </div>
-  )
+  );
 }
 
-export default POPOSSpace
+export default POPOSSpace;
