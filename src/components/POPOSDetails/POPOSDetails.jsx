@@ -2,6 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import data from '../../sfpopos-data.json';
+import './POPOSDetails.css';
 
 function POPOSDetails() {
   const params = useParams();
@@ -11,20 +12,20 @@ function POPOSDetails() {
   } = data[id];
 
   return (
-    <div>
-      <div>
+    <div className="POPOSDetails">
+      <div className="POPOSDetails-image">
         <img src={`${process.env.PUBLIC_URL}images/${images[0]}`} alt={title} />
       </div>
 
-      <div>
-        <h1>{title}</h1>
-        <p>{desc}</p>
-        <p>{hours}</p>
-        <p>{features}</p>
-        <p>
-          {geo.lat}
+      <div className="POPOSDetails-info">
+        <h1 className="POPOSDetails-title">{ title }</h1>
+        <p className="POPOSDetails-desc">{ desc }</p>
+        <p className="POPOSDetails-hours">{ hours }</p>
+        <p className="POPOSDetails-features">{ features }</p>
+        <p className="POPOSDetails-geo">
+          { geo.lat }
           {' '}
-          {geo.lon}
+          { geo.lon }
         </p>
       </div>
 
