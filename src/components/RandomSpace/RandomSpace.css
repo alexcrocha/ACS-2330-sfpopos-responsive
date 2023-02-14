@@ -1,0 +1,10 @@
+.RandomSpace-button {
+  background-color: rgb(192, 45, 26);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 8px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
