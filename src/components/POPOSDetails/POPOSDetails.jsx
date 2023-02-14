@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { useParams } from 'react-router';
-import data from '../../sfpopos-data.json';
+import data from '../../sfpopos-data';
 import './POPOSDetails.css';
 
 function POPOSDetails() {
