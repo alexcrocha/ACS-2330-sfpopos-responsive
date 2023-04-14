@@ -29,7 +29,6 @@ function POPOSList() {
           placeholder="search"
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button type="submit">Submit</button>
       </form>
       <div className="POPOSList">
         {spaces}
