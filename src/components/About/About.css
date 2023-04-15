@@ -1,3 +1,50 @@
 .About {
-  /* width: auto; */
+      display: flex;
+      flex-direction: row;
+      max-width: 1440px;
+      margin: auto;
+      padding: 2rem;
+}
+
+.About-info {
+  flex: 1;
+  text-align: left;
+  padding: 0 3rem;
+}
+
+.About-image {
+  flex: 1;
+}
+
+.About-image img {
+  width: 100%;
+}
+
+.About h1 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+.About p {
+  font-size: 1.25em;
+  padding: 1em 0 1em 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .About {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .About img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .About-info {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+  }
 }
