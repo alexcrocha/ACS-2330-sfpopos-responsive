@@ -8,7 +8,7 @@ function POPOSDetails() {
   const params = useParams();
   const { id } = params; // Location index
   const {
-    images, title, desc, hours, features, geo,
+    images, title, desc, hours, features, geo, address,
   } = data[id];
 
   return (
@@ -19,9 +19,10 @@ function POPOSDetails() {
 
       <div className="POPOSDetails-info">
         <h1 className="POPOSDetails-title">{ title }</h1>
-        <p className="POPOSDetails-desc">{ desc }</p>
-        <p className="POPOSDetails-hours">{ hours }</p>
-        <p className="POPOSDetails-features">{ features }</p>
+        <p className="POPOSDetails-desc">{desc}</p>
+        <p className="POPOSDetails-features">{ features.join(' ') }</p>
+        <p className="POPOSDetails-hours">{hours}</p>
+        <p className="POPOSDetails-address">{address}</p>
         <p className="POPOSDetails-geo">
           { geo.lat }
           {' '}
