@@ -6,6 +6,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './components/App';
 import About from './components/About/About';
+import Join from './components/Join/Join';
 import POPOSList from './components/POPOSList/POPOSList';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
 
@@ -18,6 +19,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
         <Route path="about" element={<About />} />
+        <Route path="join" element={<Join />} />
         <Route path="/details/:id" element={<POPOSDetails />} />
       </Route>
     </Routes>

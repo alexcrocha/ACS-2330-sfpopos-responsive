@@ -1,0 +1,90 @@
+.Join {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.Join-info {
+  flex: 1;
+  text-align: left;
+  padding: 0 3rem;
+}
+
+.Join-image {
+  flex: 1;
+}
+
+.Join-image img {
+  width: 100%;
+}
+
+.Join h1 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+.Join form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.Join form label {
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 1em;
+}
+
+.Join form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: .8em;
+}
+
+
+.Join form input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.25em;
+}
+
+.Join form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .Join {
+    flex-direction: column;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .Join img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .Join-info {
+    flex: 1;
+    text-align: left;
+  }
+
+  .Join form {
+    margin-top: 0;
+  }
+}

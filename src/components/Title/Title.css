@@ -40,4 +40,8 @@
     align-items: center;
     padding: 1em 1em;
   }
+
+  .nav-links a {
+    margin: 0 1em;
+  }
 }

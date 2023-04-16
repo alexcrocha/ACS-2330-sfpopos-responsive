@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import RandomSpace from '../RandomSpace/RandomSpace';
+// import RandomSpace from '../RandomSpace/RandomSpace';
 import './Title.css';
 
 function Title() {
@@ -21,7 +21,13 @@ function Title() {
         >
           About
         </NavLink>
-        <RandomSpace />
+        <NavLink
+          className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
+          to="/join"
+        >
+          Join
+        </NavLink>
+        {/* <RandomSpace /> */}
       </div>
     </div>
   );
