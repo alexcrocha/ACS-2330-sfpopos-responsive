@@ -8,8 +8,7 @@ function Title() {
   return (
     <div className="Title">
       <h1>SFPOPOS</h1>
-      <small className="Title-Subtitle">San Francisco Privately Owned Public Open Spaces</small>
-      <div>
+      <div className="nav-links">
         <NavLink
           className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
           to="/"
