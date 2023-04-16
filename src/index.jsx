@@ -9,12 +9,14 @@ import About from './components/About/About';
 import Join from './components/Join/Join';
 import POPOSList from './components/POPOSList/POPOSList';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <Router>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
