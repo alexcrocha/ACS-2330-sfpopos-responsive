@@ -7,11 +7,14 @@ function About() {
   const image = randomSite.images[0];
   const { title } = randomSite;
   return (
-    <div className="About">
-      <div className="About-image">
-        <img src={`${process.env.PUBLIC_URL}images/${image}`} alt={title} />
-      </div>
-      <div className="About-info">
+    <article className="About">
+      <section className="About-image">
+        <figure>
+          <img src={`${process.env.PUBLIC_URL}images/${image}`} alt={title} />
+          <figcaption>{title}</figcaption>
+        </figure>
+      </section>
+      <section className="About-info">
         <h1>About SFPOPOS</h1>
         <p>
           POPOS are publicly accessible spaces in
@@ -21,8 +24,8 @@ function About() {
           Francisco, POPOS mostly appear in the Downtown
           office district area.
         </p>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }
 

@@ -8,25 +8,25 @@ function POPOSSpace({
   name, image, address, hours, id,
 }) {
   return (
-    <div className="POPOSSpace">
+    <article className="POPOSSpace" aria-labelledby="space-title">
       <Link
         className="POPOSSpace-link"
         to={`/details/${id}`}
       >
-        <img
-          src={`${process.env.PUBLIC_URL}images/${image}`}
-          // width="300"
-          // height="300"
-          alt="Hello"
-        />
+        <figure>
+          <img
+            src={`${process.env.PUBLIC_URL}images/${image}`}
+            alt={name}
+          />
+        </figure>
 
-        <h1>{ name }</h1>
-        <div className="POPOSSpace-info">
-          <div>{address}</div>
-          <div className="hours">{hours}</div>
-        </div>
+        <h1 id="space-title">{ name }</h1>
+        <section className="POPOSSpace-info">
+          <p>{address}</p>
+          <p className="hours">{hours}</p>
+        </section>
       </Link>
-    </div>
+    </article>
   );
 }
 

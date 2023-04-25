@@ -6,9 +6,7 @@ function Footer() {
   return (
     <footer className="Footer">
       <p>
-        Carl copyright
-        {' '}
-        {year}
+        {`Carl copyright ${year}`}
       </p>
     </footer>
   );

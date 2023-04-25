@@ -10,11 +10,14 @@ function Join() {
   const { title } = randomSite;
 
   return (
-    <div className="Join">
-      <div className="Join-image">
-        <img src={`${process.env.PUBLIC_URL}images/${image}`} alt={title} />
-      </div>
-      <div className="Join-info">
+    <article className="Join">
+      <section className="Join-image">
+        <figure>
+          <img src={`${process.env.PUBLIC_URL}images/${image}`} alt={title} />
+          <figcaption>{title}</figcaption>
+        </figure>
+      </section>
+      <section className="Join-info">
         <h1>Join SFPOPOS Newsletter</h1>
         <form>
           <label htmlFor="name">Name</label>
@@ -25,15 +28,16 @@ function Join() {
             className="submit"
             to="/"
           >
-            <input
+            <button
               type="submit"
-              value="Submit"
               onClick={(event) => event.preventDefault}
-            />
+            >
+              Submit
+            </button>
           </NavLink>
         </form>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }
 

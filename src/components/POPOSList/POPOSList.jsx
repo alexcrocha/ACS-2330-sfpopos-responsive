@@ -28,11 +28,12 @@ function POPOSList() {
           value={query}
           placeholder="search"
           onChange={(e) => setQuery(e.target.value)}
+          aria-label="Search for public spaces"
         />
       </form>
-      <div className="POPOSList">
+      <section className="POPOSList">
         {spaces}
-      </div>
+      </section>
     </>
   );
 }

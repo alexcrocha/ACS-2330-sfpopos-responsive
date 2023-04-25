@@ -12,13 +12,13 @@ function POPOSDetails() {
   } = data[id];
 
   return (
-    <div className="POPOSDetails">
-      <div className="POPOSDetails-image">
+    <article className="POPOSDetails" aria-labelledby="popos-title">
+      <figure className="POPOSDetails-image">
         <img src={`${process.env.PUBLIC_URL}images/${images[0]}`} alt={title} />
-      </div>
+      </figure>
 
-      <div className="POPOSDetails-info">
-        <h1 className="POPOSDetails-title">{ title }</h1>
+      <section className="POPOSDetails-info">
+        <h1 className="POPOSDetails-title" id="popos-title">{ title }</h1>
         <p className="POPOSDetails-desc">{desc}</p>
         <p className="POPOSDetails-features">{ features.join(' ') }</p>
         <p className="POPOSDetails-hours">{hours}</p>
@@ -28,9 +28,8 @@ function POPOSDetails() {
           {' '}
           { geo.lon }
         </p>
-      </div>
-
-    </div>
+      </section>
+    </article>
   );
 }
 

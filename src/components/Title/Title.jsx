@@ -6,9 +6,9 @@ import './Title.css';
 
 function Title() {
   return (
-    <div className="Title">
+    <header className="Title">
       <h1>SFPOPOS</h1>
-      <div className="nav-links">
+      <nav className="nav-links" aria-label="Main navigation">
         <NavLink
           className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
           to="/"
@@ -28,8 +28,8 @@ function Title() {
           Join
         </NavLink>
         {/* <RandomSpace /> */}
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
